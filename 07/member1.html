@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+</head>
+<body>
+    <h2>회원가입 환영합니다.</h2>
+        <ui>
+            <li>
+                <label class="member" for="user_id">아이디:<input type="text" id="user_id" size="10" minlength="4" maxlength="15"></label>
+                <small style="color: red;">4~15자리 이내로 작성해주세요.</small>            
+            </li>
+            <li>
+                <label for="mail">이메일</label>
+                <input type="email" id="mail">
+            </li>
+            <li>
+                <label for="passwd">비밀번호</label>
+                <input type="password" id="passwd">
+            </li>
+            <li>
+                <label for="passwd">비밀번호 확인</label>
+                <input type="password" id="passwd">
+            </li>
+        </ui>
+        <label><input type="button" id="member" value="회원가입"></label>
+</body>
+</html>

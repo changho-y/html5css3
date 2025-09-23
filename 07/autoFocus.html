@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 커서 표시</title>
+</head>
+<body>
+    <h3>오마카세 예약</h3>
+    <form>
+        <fieldset>
+            <legend>코스</legend>
+            <label class="res" for="dinner">저녁코스(평일)<input type="text" id="dinner" value="오후 18:00~20:00" readonly></label>
+        </fieldset>
+        <fieldset>
+            <legend>예약자</legend>
+            <ul>
+                <li>
+                    <label class="res" for="uname">성함</label>
+                    <input type="text" id="uname" autofocus required>  
+                </li>      
+                <li>
+                    <label class="res" for="tel">전화번호</label>
+                    <input type="tel" id="tel" placeholder="하이픈없이 입력하세요" required>
+                </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>예약</legend>
+            <ul>
+                <li>
+                    <label class="res" for="group">총 인원<small>(2명부터 예약이 가능합니다.)</small></label>
+                    <input type="number" id="group" value="2" max="8" min="2" step="1">
+                </li>
+                <li>
+                    <label class="res" for="req">요청사항</label>
+                    <input type="text" id="req" placeholder="요청사항이나 알레르기가 있으시다면 적어주세요." size="100">
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
